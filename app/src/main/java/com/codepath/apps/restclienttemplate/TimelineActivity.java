@@ -1,11 +1,17 @@
 package com.codepath.apps.restclienttemplate;
 
+import android.content.Intent;
+import android.os.Parcel;
+import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -13,6 +19,7 @@ import com.loopj.android.http.JsonHttpResponseHandler;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +28,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class TimelineActivity extends AppCompatActivity {
 
+    private final int REQUEST_CODE = 20;
     private TwitterClient client;
     private RecyclerView rvTweets;
     private TweetsAdapter adapter;
@@ -37,7 +45,7 @@ public class TimelineActivity extends AppCompatActivity {
 
         swipeContainer = findViewById(R.id.swipeContainer);
         // Configure the refreshing colors
-       swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
+        swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
                 android.R.color.holo_blue_light,
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);
@@ -56,13 +64,47 @@ public class TimelineActivity extends AppCompatActivity {
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                Log.d("TwitterClient","content is being refreshed");
                 populaHomeTimeLine();
             }
         });
-
-        
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId()==R.id.compose){
+            // tapped on compose icon
+            // navigate to a new activity
+            Intent i = new Intent(this, ComposeActivity.class);
+            this.startActivityForResult(i,REQUEST_CODE);
+            //Toast.makeText(this, "Compose!", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        // REQUEST_CODE is defined above
+        if(requestCode == REQUEST_CODE && resultCode == RESULT_OK){
+            // Pull info out of the data intent (Tweet)
+            Tweet tweet = Parcels.unwrap(data.getParcelableExtra("tweet"));
+            // Update the recycler view with this tweet
+            tweets.add(0,tweet);
+            adapter.notifyItemInserted(0);
+        }
+    }
+
+
+
+
 
     private void populaHomeTimeLine() {
         client.getHomeTimeLine(new JsonHttpResponseHandler(){
