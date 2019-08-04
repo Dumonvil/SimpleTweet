@@ -99,6 +99,7 @@ public class TimelineActivity extends AppCompatActivity {
             // Update the recycler view with this tweet
             tweets.add(0,tweet);
             adapter.notifyItemInserted(0);
+            rvTweets.smoothScrollToPosition(0);
         }
     }
 
