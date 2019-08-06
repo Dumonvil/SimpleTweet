@@ -49,8 +49,7 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/Dumonvil/SimpleTweet2/blob/master/Twiiter.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
+ 
 ## Notes
 
 Describe any challenges encountered while building the app.
