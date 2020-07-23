@@ -1,0 +1,147 @@
+<html>
+   <head>
+      <style>
+         .banner-color {
+         background-color: #eb681f;
+         }
+         .title-color {
+         color: #0066cc;
+         }
+         .button-color {
+         background-color: #0066cc;
+         }
+         @media screen and (min-width: 500px) {
+         .banner-color {
+         background-color: #0066cc;
+         }
+         .title-color {
+         color: #eb681f;
+         }
+         .button-color {
+         background-color: #eb681f;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <div style="background-color:#ececec;padding:0;margin:0 auto;font-weight:200;width:100%!important">
+         <table align="center" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;font-weight:200;font-family:Helvetica,Arial,sans-serif" width="100%">
+            <tbody>
+               <tr>
+                  <td align="center">
+                     <center style="width:100%">
+                        <table bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;max-width:512px;font-weight:200;width:inherit;font-family:Helvetica,Arial,sans-serif" width="512">
+                           <tbody>
+                              <tr>
+                                 <td bgcolor="#F3F3F3" width="100%" style="background-color:#f3f3f3;padding:12px;border-bottom:2px solid #ececec">
+                                    <table border="0" cellspacing="0" cellpadding="0" style="font-weight:200;width:100%!important;font-family:Helvetica,Arial,sans-serif;min-width:100%!important" width="100%">
+                                       <tbody>
+                                        
+                                             <img  style="display:inline-block;position: sticky; margin-right: 50px "
+                                                                      
+                                       width="150px"/>
+
+                                    <img src="api-oni.png" style="display: inline-block; float:center"
+                                       width="120px" 
+                                    />
+                                 </p>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="left">
+                                    <table border="0" cellspacing="0" cellpadding="0" style="font-weight:200;font-family:Helvetica,Arial,sans-serif" width="100%">
+                                       <tbody>
+                                          <tr>
+                                             <td width="100%">
+                                                <table border="0" cellspacing="0" cellpadding="0" style="font-weight:200;font-family:Helvetica,Arial,sans-serif" width="100%">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td align="center" bgcolor="#8BC34A" style="padding:20px 48px;color:#ffffff" class="banner-color">
+                                                            <table border="0" cellspacing="0" cellpadding="0" style="font-weight:200;font-family:Helvetica,Arial,sans-serif" width="100%">
+                                                               <tbody>
+                                                                  <tr>
+                                                                     <td align="center" width="100%">
+                                                                        <h1 style="padding:0;margin:0;color:#ffffff;font-weight:200;font-size:20px;line-height:14px">{ONI-API}</h1>
+                                                                     </td>
+                                                                  </tr>
+                                                               </tbody>
+                                                            </table>
+                                                         </td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td align="center" style="padding:20px 0 10px 0">
+                                                            <table border="0" cellspacing="0" cellpadding="0" style="font-weight:200;font-family:Helvetica,Times New Roman,sans-serif" width="100%">
+                                                               <tbody>
+                                                                  <tr>
+                                                                     <td width="100%" style="padding: 0 15px;text-align: justify;color: rgb(76, 76, 76);font-size: 12px;line-height: 18px;">
+                                                                        <h3 style="font-weight: 600; padding: 0px; margin: 0px; font-size: 16px; line-height: 24px; text-align: center;" class="title-color">Welcome to </h3>
+                                                                        <p style="margin: 20px 0 30px 0;font-size: 20px;text-align: center;">L’Office national d’identification est un organisme placé sous la tutelle du Ministère de la justice et de la sécurité publique. Sa mission essentielle est de gérer l’identification des citoyens et de tenir un registre comportant toutes les données sur la population.Dans divers pays, les données démographiques, qu’il s’agit de (données) de recensement, de registres administratifs (État civil et registres d’immigration), d’enquêtes post-censitaires ou d’informations provenant d’organismes comme l’ONI, permettent aux décideurs de prendre de bonnes décisions dans des domaines L’Office national d’identification est un organisme placé sous la tutelle du Ministère de la justice et de la sécurité publique. Sa mission essentielle est de gérer l’identification des citoyens et de tenir un registre comportant toutes les données sur la population.Dans divers pays, les données démographiques, qu’il s’agit de (données) de recensement, de registres administratifs (État civil etL’Office national d’identification est un organisme placé sous la tutelle du Ministère de la justice et de la sécurité publique. Sa mission essentielle est de gérer l’identification des citoyens et de tenir un registre comportant toutes les données sur la population.Dans divers pays, les données démographiques, qu’il s’agit de (données) de recensement, de registres administratifs (État civil etcomme la santé, l’emploi et la migration. <b>register now</b>!</p>
+
+                                                                           
+                                                                       
+                                                                        <div style="font-weight: 200; text-align: center; margin: 25px;"><a style="padding:0.6em 1em;border-radius:600px;color:#ffffff;font-size:14px;text-decoration:none;font-weight:bold" href="https://support.google.com/mail/answer/8494?co=GENIE.Platform%3DDesktop&hl=fr.htm" class="button-color">Repondre mail</a></div>
+                                                                      
+                                                                     </td>
+                                                                  </tr>
+                                                               </tbody>
+                                                            </table>
+                                                         </td>
+                                                      </tr>
+                                                      <tr> 
+                                                      <tr>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="left">
+                                    <table bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" style="padding:0 24px;color:#999999;font-weight:200;font-family:Helvetica,Arial,sans-serif" width="100%">
+                                       <tbody>
+                                          <tr>
+                                             <td align="center" width="100%">
+                                                <table border="0" cellspacing="0" cellpadding="0" style="font-weight:200;font-family:Helvetica,Arial,sans-serif" width="100%">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td align="center" valign="middle" width="100%" style="border-top:1px solid #d9d9d9;padding:12px 0px 20px 0px;text-align:center;color:#4c4c4c;font-weight:200;font-size:12px;line-height:18px"> 
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             
+                                                <table border="0" cellspacing="0" cellpadding="0" style="font-weight:200;font-family:Helvetica,Arial,sans-serif" width="100%">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td bgcolor="#FF8C33" style="padding:20px 48px;" class="banner-color">
+                                                             
+                                                            
+                                                </table>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </center>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+
+      </div>
+
+     
+   </body>
+</html>
+ 
